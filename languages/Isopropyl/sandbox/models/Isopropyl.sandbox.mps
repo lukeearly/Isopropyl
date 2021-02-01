@@ -21,6 +21,7 @@
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
+      <concept id="1070534513062" name="jetbrains.mps.baseLanguage.structure.DoubleType" flags="in" index="10P55v" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
@@ -47,6 +48,9 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
+        <child id="1079359253376" name="expression" index="1eOMHV" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -105,6 +109,16 @@
         <child id="5344638140371189944" name="execute" index="rZVyE" />
         <child id="5344638140371189966" name="init" index="rZVzs" />
       </concept>
+      <concept id="2323525224222748712" name="Isopropyl.structure.DiscreteMechanism" flags="ng" index="2wiy79">
+        <child id="2323525224222748818" name="lookup" index="2wiy5N" />
+      </concept>
+      <concept id="4128442738227781038" name="Isopropyl.structure.EnumLUTLabel" flags="ng" index="YOb5y">
+        <child id="4128442738227781041" name="type" index="YOb5X" />
+      </concept>
+      <concept id="4571330853617114982" name="Isopropyl.structure.EnumLUT" flags="ng" index="ZOjTn">
+        <child id="4128442738227781010" name="labels" index="YOb5u" />
+        <child id="2888942604124951746" name="entries" index="3niS4Z" />
+      </concept>
       <concept id="7140505646344449764" name="Isopropyl.structure.Sequential" flags="ng" index="3440bD">
         <child id="7140505646344449765" name="tasks" index="3440bC" />
       </concept>
@@ -114,6 +128,13 @@
         <child id="7140505646344449745" name="stop" index="3440bs" />
       </concept>
       <concept id="7140505646344523489" name="Isopropyl.structure.Nop" flags="ng" index="344mbG" />
+      <concept id="2888942604124989386" name="Isopropyl.structure.EnumLUTKey" flags="ng" index="3niN8R">
+        <property id="2888942604124989454" name="entitled" index="3niNRN" />
+      </concept>
+      <concept id="2888942604124951775" name="Isopropyl.structure.EnumLUTEntry" flags="ng" index="3niS4y">
+        <child id="2888942604124989357" name="key" index="3niN9g" />
+        <child id="2888942604124951845" name="values" index="3niS3o" />
+      </concept>
       <concept id="7054332663421898029" name="Isopropyl.structure.Trajectory" flags="ng" index="3Nl8G3">
         <child id="7054332663421898031" name="start" index="3Nl8G1" />
         <child id="7054332663421936025" name="steps" index="3NliuR" />
@@ -127,6 +148,11 @@
       </concept>
     </language>
   </registry>
+  <node concept="rZVyu" id="4CFY19hP9zw">
+    <property role="TrG5h" value="Burst" />
+    <node concept="344mbG" id="4CFY19hPeZK" role="rZVzs" />
+    <node concept="344mbG" id="4CFY19hPeZN" role="rZVyE" />
+  </node>
   <node concept="3442xs" id="6cob0QB2hVP">
     <property role="TrG5h" value="PowerShots" />
     <node concept="344mbG" id="7WwYV8IUzFz" role="3440bs" />
@@ -138,10 +164,10 @@
         <property role="rTb7U" value="v" />
         <node concept="3NvA$4" id="20YOu60lnxB" role="rTb7S">
           <node concept="3b6qkQ" id="20YOu60lBEe" role="3NvA$3">
-            <property role="$nhwW" value="-14.76" />
+            <property role="$nhwW" value="26.28" />
           </node>
           <node concept="3b6qkQ" id="20YOu60smvH" role="3NvA$1">
-            <property role="$nhwW" value="16.92" />
+            <property role="$nhwW" value="2.16" />
           </node>
         </node>
       </node>
@@ -324,10 +350,76 @@
       </node>
     </node>
   </node>
-  <node concept="rZVyu" id="4CFY19hP9zw">
-    <property role="TrG5h" value="Burst" />
-    <node concept="344mbG" id="4CFY19hPeZK" role="rZVzs" />
-    <node concept="344mbG" id="4CFY19hPeZN" role="rZVyE" />
+  <node concept="2wiy79" id="2wn_vRZro9x">
+    <property role="TrG5h" value="Arm" />
+    <node concept="ZOjTn" id="2wn_vRZro9y" role="2wiy5N">
+      <node concept="YOb5y" id="2wn_vRZro9z" role="YOb5u">
+        <property role="TrG5h" value="shoulder" />
+        <node concept="10P55v" id="2wn_vRZroaK" role="YOb5X" />
+      </node>
+      <node concept="3niS4y" id="2wn_vRZro9_" role="3niS4Z">
+        <node concept="1eOMI4" id="2wn_vRZro9A" role="3niS3o">
+          <node concept="3b6qkQ" id="2wn_vRZrobH" role="1eOMHV">
+            <property role="$nhwW" value="0.2" />
+          </node>
+        </node>
+        <node concept="3niN8R" id="2wn_vRZro9C" role="3niN9g">
+          <property role="3niNRN" value="hold" />
+        </node>
+        <node concept="1eOMI4" id="2wn_vRZroaX" role="3niS3o">
+          <node concept="3b6qkQ" id="2wn_vRZrobT" role="1eOMHV">
+            <property role="$nhwW" value="0.5" />
+          </node>
+        </node>
+      </node>
+      <node concept="YOb5y" id="2wn_vRZroaW" role="YOb5u">
+        <property role="TrG5h" value="elbow" />
+        <node concept="10P55v" id="2wn_vRZrobn" role="YOb5X" />
+      </node>
+      <node concept="3niS4y" id="2wn_vRZrob5" role="3niS4Z">
+        <node concept="3niN8R" id="2wn_vRZrob6" role="3niN9g">
+          <property role="3niNRN" value="intake" />
+        </node>
+        <node concept="1eOMI4" id="2wn_vRZrob7" role="3niS3o">
+          <node concept="3b6qkQ" id="2wn_vRZroc5" role="1eOMHV">
+            <property role="$nhwW" value="0.8" />
+          </node>
+        </node>
+        <node concept="1eOMI4" id="2wn_vRZrob8" role="3niS3o">
+          <node concept="3b6qkQ" id="2wn_vRZroch" role="1eOMHV">
+            <property role="$nhwW" value="0.0" />
+          </node>
+        </node>
+      </node>
+      <node concept="3niS4y" id="2wn_vRZrUzv" role="3niS4Z">
+        <node concept="3niN8R" id="2wn_vRZrUzw" role="3niN9g">
+          <property role="3niNRN" value="mid" />
+        </node>
+        <node concept="1eOMI4" id="2wn_vRZrUzx" role="3niS3o">
+          <node concept="3NvA$4" id="2wn_vRZrU$2" role="1eOMHV">
+            <node concept="3cmrfG" id="2wn_vRZrU_C" role="3NvA$3">
+              <property role="3cmrfH" value="2" />
+            </node>
+            <node concept="3cmrfG" id="2wn_vRZrU_R" role="3NvA$1">
+              <property role="3cmrfH" value="3" />
+            </node>
+          </node>
+        </node>
+        <node concept="1eOMI4" id="2wn_vRZrUzy" role="3niS3o">
+          <node concept="rYr24" id="2wn_vRZrUA6" role="1eOMHV">
+            <node concept="3cmrfG" id="2wn_vRZrUBG" role="rYr25">
+              <property role="3cmrfH" value="2" />
+            </node>
+            <node concept="3cmrfG" id="2wn_vRZrUBU" role="rYr2a">
+              <property role="3cmrfH" value="3" />
+            </node>
+            <node concept="3b6qkQ" id="2wn_vRZrUC8" role="rYr2b">
+              <property role="$nhwW" value="0.5" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 
