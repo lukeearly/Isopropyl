@@ -113,9 +113,6 @@
         <child id="7140505646344449742" name="run" index="3440b3" />
         <child id="7140505646344449745" name="stop" index="3440bs" />
       </concept>
-      <concept id="7140505646344465406" name="Isopropyl.structure.Parallel" flags="ng" index="3444vN">
-        <child id="7140505646344465407" name="tasks" index="3444vM" />
-      </concept>
       <concept id="7140505646344523489" name="Isopropyl.structure.Nop" flags="ng" index="344mbG" />
       <concept id="7054332663421898029" name="Isopropyl.structure.Trajectory" flags="ng" index="3Nl8G3">
         <child id="7054332663421898031" name="start" index="3Nl8G1" />
@@ -134,21 +131,30 @@
     <property role="TrG5h" value="PowerShots" />
     <node concept="344mbG" id="7WwYV8IUzFz" role="3440bs" />
     <node concept="3440bD" id="4CFY19hNRGu" role="3440b1">
-      <node concept="3444vN" id="4CFY19hNRGx" role="3440bC">
-        <node concept="rVa7G" id="4CFY19hNRGz" role="3444vM">
-          <property role="rTb7U" value="velo" />
-          <node concept="3NvA$4" id="1qawAMtTD9y" role="rTb7S">
-            <node concept="3cmrfG" id="1qawAMtTD9I" role="3NvA$3">
-              <property role="3cmrfH" value="1" />
-            </node>
-            <node concept="3cmrfG" id="1qawAMtTD9Q" role="3NvA$1">
-              <property role="3cmrfH" value="4" />
-            </node>
+      <node concept="rSVbJ" id="4CFY19hOxKr" role="3440bC">
+        <property role="rSVbG" value="400" />
+      </node>
+      <node concept="rVa7G" id="20YOu60lnxb" role="3440bC">
+        <property role="rTb7U" value="v" />
+        <node concept="3NvA$4" id="20YOu60lnxB" role="rTb7S">
+          <node concept="3b6qkQ" id="20YOu60lBEe" role="3NvA$3">
+            <property role="$nhwW" value="-14.76" />
+          </node>
+          <node concept="3b6qkQ" id="20YOu60smvH" role="3NvA$1">
+            <property role="$nhwW" value="16.92" />
           </node>
         </node>
       </node>
-      <node concept="rSVbJ" id="4CFY19hOxKr" role="3440bC">
-        <property role="rSVbG" value="400" />
+      <node concept="rVa7G" id="20YOu60oDyS" role="3440bC">
+        <property role="rTb7U" value="t" />
+        <node concept="3NvA$4" id="20YOu60oDzo" role="rTb7S">
+          <node concept="3cmrfG" id="20YOu60oDz$" role="3NvA$3">
+            <property role="3cmrfH" value="5" />
+          </node>
+          <node concept="3cmrfG" id="20YOu60oDzG" role="3NvA$1">
+            <property role="3cmrfH" value="6" />
+          </node>
+        </node>
       </node>
       <node concept="rVa7G" id="4CFY19hOC9v" role="3440bC">
         <property role="rTb7U" value="pose" />
@@ -161,6 +167,17 @@
           </node>
           <node concept="3cmrfG" id="67A1yUiAlSG" role="rYr2b">
             <property role="3cmrfH" value="3" />
+          </node>
+        </node>
+      </node>
+      <node concept="rVa7G" id="20YOu60qBEY" role="3440bC">
+        <property role="rTb7U" value="e" />
+        <node concept="3NvA$4" id="20YOu60qBFy" role="rTb7S">
+          <node concept="3b6qkQ" id="20YOu60qBGW" role="3NvA$1">
+            <property role="$nhwW" value="68.64" />
+          </node>
+          <node concept="3b6qkQ" id="20YOu60qBHD" role="3NvA$3">
+            <property role="$nhwW" value="68.64" />
           </node>
         </node>
       </node>
