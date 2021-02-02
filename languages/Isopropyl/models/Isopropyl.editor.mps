@@ -290,6 +290,7 @@
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -330,6 +331,7 @@
     </language>
   </registry>
   <node concept="24kQdi" id="6cob0QB22VI">
+    <property role="3GE5qa" value="task" />
     <ref role="1XX52x" to="v0xj:6cob0QB22V$" resolve="Sequential" />
     <node concept="3EZMnI" id="6cob0QB22VP" role="2wV5jI">
       <node concept="3F0ifn" id="6cob0QB22Y4" role="3EZMnx">
@@ -356,6 +358,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="6cob0QB26K7">
+    <property role="3GE5qa" value="task" />
     <ref role="1XX52x" to="v0xj:6cob0QB26JY" resolve="Parallel" />
     <node concept="3EZMnI" id="6cob0QB26K9" role="2wV5jI">
       <node concept="3F0ifn" id="6cob0QB26Kg" role="3EZMnx">
@@ -442,12 +445,14 @@
     </node>
   </node>
   <node concept="24kQdi" id="6cob0QB2kVK">
+    <property role="3GE5qa" value="task" />
     <ref role="1XX52x" to="v0xj:6cob0QB2kVx" resolve="Nop" />
     <node concept="3F0ifn" id="6cob0QB2kVM" role="2wV5jI">
       <property role="3F0ifm" value="nop" />
     </node>
   </node>
   <node concept="24kQdi" id="4CFY19hLPCr">
+    <property role="3GE5qa" value="task" />
     <ref role="1XX52x" to="v0xj:4CFY19hLPBY" resolve="SetState" />
     <node concept="3EZMnI" id="4CFY19hLPCt" role="2wV5jI">
       <node concept="3F0A7n" id="4CFY19hLPC$" role="3EZMnx">
@@ -463,6 +468,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="4CFY19hM4Hh">
+    <property role="3GE5qa" value="task" />
     <ref role="1XX52x" to="v0xj:4CFY19hM4FX" resolve="Wait" />
     <node concept="3EZMnI" id="4CFY19hM4Hm" role="2wV5jI">
       <node concept="3F0ifn" id="4CFY19hM4Ho" role="3EZMnx">
@@ -478,6 +484,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="4CFY19hO$yw">
+    <property role="3GE5qa" value="geometry" />
     <ref role="1XX52x" to="v0xj:4CFY19hO$ym" resolve="Pose2dConstructor" />
     <node concept="3EZMnI" id="4CFY19hO$yx" role="2wV5jI">
       <node concept="2iRkQZ" id="4CFY19hO$yy" role="2iSdaV" />
@@ -529,6 +536,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="4CFY19hOULT">
+    <property role="3GE5qa" value="task" />
     <ref role="1XX52x" to="v0xj:4CFY19hOULz" resolve="InlineJava" />
     <node concept="3EZMnI" id="6QunX$9HSK9" role="2wV5jI">
       <property role="S$Qs1" value="true" />
@@ -631,6 +639,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="67A1yUiA6WS">
+    <property role="3GE5qa" value="geometry" />
     <ref role="1XX52x" to="v0xj:67A1yUiA6WE" resolve="Vector2dConstructor" />
     <node concept="3EZMnI" id="67A1yUiA6WT" role="2wV5jI">
       <node concept="2iRfu4" id="67A1yUiA6WU" role="2iSdaV" />
@@ -958,6 +967,7 @@
   </node>
   <node concept="312cEu" id="67A1yUiEKhE">
     <property role="TrG5h" value="FieldEditorV" />
+    <property role="3GE5qa" value="geometry" />
     <node concept="312cEg" id="67A1yUiEWXN" role="jymVt">
       <property role="TrG5h" value="buf" />
       <node concept="3Tm6S6" id="67A1yUiEWh9" role="1B3o_S" />
@@ -1707,6 +1717,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="67A1yUiGM6E">
+    <property role="3GE5qa" value="path" />
     <ref role="1XX52x" to="v0xj:67A1yUiGCOH" resolve="Trajectory" />
     <node concept="3EZMnI" id="67A1yUiGM6G" role="2wV5jI">
       <node concept="3F0ifn" id="67A1yUiGM6N" role="3EZMnx">
@@ -1735,6 +1746,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="67A1yUiGM81">
+    <property role="3GE5qa" value="path" />
     <ref role="1XX52x" to="v0xj:67A1yUiGM7R" resolve="LineTo" />
     <node concept="3EZMnI" id="67A1yUiGM86" role="2wV5jI">
       <node concept="3F0ifn" id="67A1yUiGM88" role="3EZMnx">
@@ -1747,6 +1759,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="20YOu60tf17">
+    <property role="3GE5qa" value="task" />
     <ref role="1XX52x" to="v0xj:20YOu60tf0C" resolve="DiscreteMechanism" />
     <node concept="3EZMnI" id="20YOu60tf1c" role="2wV5jI">
       <node concept="3F0ifn" id="20YOu60tf1e" role="3EZMnx">
@@ -1780,6 +1793,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="3XKCj40CpXI">
+    <property role="3GE5qa" value="enum" />
     <ref role="1XX52x" to="v0xj:3XKCj40CpXA" resolve="EnumLUT" />
     <node concept="3EZMnI" id="2wn_vRZo2SN" role="2wV5jI">
       <node concept="2iRkQZ" id="2wn_vRZo2SO" role="2iSdaV" />
@@ -2182,6 +2196,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="3_bbcK7BkTd">
+    <property role="3GE5qa" value="enum" />
     <ref role="1XX52x" to="v0xj:3_bbcK7ATQI" resolve="EnumLUTLabel" />
     <node concept="3EZMnI" id="3_bbcK7BkTf" role="2wV5jI">
       <node concept="3F0A7n" id="3_bbcK7BkTp" role="3EZMnx">
@@ -2198,6 +2213,7 @@
   </node>
   <node concept="312cEu" id="2wn_vRZmvCD">
     <property role="TrG5h" value="EnumLUTTableModel" />
+    <property role="3GE5qa" value="enum" />
     <node concept="312cEg" id="2wn_vRZmL5y" role="jymVt">
       <property role="TrG5h" value="n" />
       <node concept="3Tm6S6" id="2wn_vRZmKaa" role="1B3o_S" />
@@ -2456,6 +2472,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="2wn_vRZn_ss">
+    <property role="3GE5qa" value="enum" />
     <ref role="1XX52x" to="v0xj:2wn_vRZnava" resolve="EnumLUTKey" />
     <node concept="3F0A7n" id="2wn_vRZn_tx" role="2wV5jI">
       <ref role="1NtTu8" to="v0xj:2wn_vRZnawe" resolve="entitled" />
@@ -2463,6 +2480,7 @@
   </node>
   <node concept="1h_SRR" id="2wn_vRZo4KT">
     <property role="TrG5h" value="EnumLUTTableMap" />
+    <property role="3GE5qa" value="enum" />
     <ref role="1h_SK9" to="v0xj:3XKCj40CpXA" resolve="EnumLUT" />
   </node>
 </model>

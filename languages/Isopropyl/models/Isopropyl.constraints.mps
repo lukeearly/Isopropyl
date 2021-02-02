@@ -65,8 +65,14 @@
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
     </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+    </language>
   </registry>
   <node concept="1M2fIO" id="2wn_vRZpzTx">
+    <property role="3GE5qa" value="enum" />
     <ref role="1M2myG" to="v0xj:2wn_vRZn1jv" resolve="EnumLUTEntry" />
     <node concept="EnEH3" id="2wn_vRZpzU_" role="1MhHOB">
       <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
